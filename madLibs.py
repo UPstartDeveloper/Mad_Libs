@@ -16,14 +16,15 @@ def init_blanks(dict, list):
 def print_full_story(list_of_lines, dict, dict_keys):
     key_word = ""
     for i in range(len(list_of_lines)):
-        key_word = dict_keys[i]
-        list_of_lines[i] += dict[key_word]
+        key_word = dict_keys[i]  # traverses the keys in the dictionary
+        list_of_lines[i] += dict[key_word]  # dict value appends list element
     for line in list_of_lines:
-        print(line)
+        sentence = line + "."
+        print(sentence)
 
 
 blanks = {
-    "enter a noun: ": "",
+    "enter a noun (a place): ": "",
     "enter a verb: ": "",
     "enter an adjective: ": "",
     "enter an adverb: ": "",
@@ -31,9 +32,11 @@ blanks = {
 }
 
 story_list = [
-    "This is the first of my story ",
-    "This is the second part of my story. Please ",
-    "This is the third part of my story. Please "
+    "Kevin loved his home in the suburbs of ",
+    "He spent everyday doing his favorite activity, ",
+    "However, one day Kevin was abducted by someone who was very ",
+    "Never to fear! The police took up the search for Kevin ",
+    "Then Kevin was found, and joyous became the owner he was reunited "
 ]
 
 list_of_keys = list(blanks.keys())
