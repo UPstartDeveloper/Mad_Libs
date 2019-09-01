@@ -12,6 +12,9 @@ import pyfiglet  # module used for ASCII art
 def init_blanks(diction, list):
     for key in list:
         diction[key] = input(key)
+        while not diction[key].isalpha():
+            print("Invalid input.")
+            diction[key] = input("Please try again: ")
 
 
 def print_full_story(list_of_lines, diction, dict_keys):
@@ -26,7 +29,7 @@ def print_full_story(list_of_lines, diction, dict_keys):
 
 
 blanks = {
-    "enter a noun (a place): ": "",
+    "enter a noun: ": "",
     "enter a verb: ": "",
     "enter an adjective: ": "",
     "enter an adverb: ": "",
