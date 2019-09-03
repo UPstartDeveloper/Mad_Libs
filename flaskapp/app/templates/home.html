@@ -4,7 +4,15 @@
 {% block content %}
     <div class = "jumbo">
         <h2>The Search for Kevin the Dog</h2>
-        <h3>Fill in the blanks and see what kind of story I generate!</h3>
+        <h3>Fill in the blanks below and see what kind of story I generate!</h3>
         <center><img src = "https://images.unsplash.com/photo-1507145569372-d69bae8bc9a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=60" alt = "Dog Picture"></center>
+        <form action = "routes.py">
+            Enter a noun: <input type = "text" name = "n"><br>
+            Enter a verb: <input type = "text" name = "v"><br>
+            Enter an adjective: <input = "text" name = "adj"><br>
+            Enter an adverb: <input = "text" name = "adv"><br>
+            Enter a preposition: <input = "text" name = "prep"><br>
+            <input type = "submit" value = "Submit">
+            </form>
     </div>
 {% endblock %}
