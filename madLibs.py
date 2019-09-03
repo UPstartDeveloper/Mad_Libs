@@ -22,9 +22,9 @@ def print_full_story(list_of_lines, diction, dict_keys):
     for i in range(len(list_of_lines)):
         key_word = dict_keys[i]  # traverses the keys in the dictionary
         green_text = "\033[1;32;40m{}\x1b[0m".format(diction[key_word])
-        list_of_lines[i] += green_text  # dict value appends list element
+        list_of_lines[i] += green_text  # dict value (in green) appends list element
     for line in list_of_lines:
-        sentence = line + "."
+        sentence = line + "."  # finishes sentence with punctuation
         print(sentence)
 
 
