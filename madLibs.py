@@ -29,11 +29,11 @@ def print_full_story(list_of_lines, diction, dict_keys):
 
 
 blanks = {
-    "enter a noun: ": "",
-    "enter a verb: ": "",
-    "enter an adjective: ": "",
-    "enter an adverb: ": "",
-    "enter a preposition: ": ""
+    "Enter a noun: ": "",
+    "Enter a verb: ": "",
+    "Enter an adjective: ": "",
+    "Enter an adverb: ": "",
+    "Enter a preposition: ": ""
 }
 
 story_list = [
