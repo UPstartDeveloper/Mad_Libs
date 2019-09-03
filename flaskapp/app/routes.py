@@ -1,4 +1,4 @@
-# The following was inspired by https://code.tutsplus.com/tutorials/an-introduction-to-pythons-flask-framework--net-28822
+# Inspired by Flask tutorial at this web address: http://bit.ly/2kqDPqV
 from flask import Flask, render_template
 
 app = Flask(__name__)
