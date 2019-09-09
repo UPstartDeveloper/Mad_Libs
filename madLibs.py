@@ -26,7 +26,8 @@ story_list = [
     "Then Kevin was found, and joyous became the owner he was reunited "
 ]
 
-list_of_keys = list(blanks.keys())  # creates a list to be used for iterating through dict using for loop
+# creates a list to be used for iterating through dict using for loop
+list_of_keys = list(blanks.keys())
 
 
 # travserses dict keys to prompt user, keys initialiazed to input
@@ -51,7 +52,9 @@ def print_full_story(list_of_lines, diction, dict_keys):
         print(sentence)
 
 
-init_blanks(blanks, list_of_keys)  # takes in user input
-title = pyfiglet.figlet_format("The Search for Kevin the Dog", font="slant")  # ASCII title
-print(title)
-print_full_story(story_list, blanks, list_of_keys)  # user is shown their story
+# defining main function
+if __name__ == "__main__":
+    init_blanks(blanks, list_of_keys)  # takes in user input
+    title = pyfiglet.figlet_format("The Search for Kevin the Dog", font="slant")  # ASCII title
+    print(title)
+    print_full_story(story_list, blanks, list_of_keys)  # user is shown their story
